@@ -7,7 +7,6 @@ import java.lang.Float;
 import java.lang.Long;
 import java.lang.Short;
 import java.lang.System;
-import java.lang.Void;
 
 public class AutoPackage {
     boolean b;
