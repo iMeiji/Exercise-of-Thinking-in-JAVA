@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/part3/ex2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/part3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/part5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/plus" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/part2/ex1" />
       <excludeFolder url="file://$MODULE_DIR$/part2/ex10" />
       <excludeFolder url="file://$MODULE_DIR$/part2/ex11" />
