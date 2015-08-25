@@ -6,6 +6,6 @@ package ex13;
 public class Man extends Person {
 
     public void f(String str) {
-        System.out.println("f " + str.);
+        System.out.println("f " + str);
     }
 }
