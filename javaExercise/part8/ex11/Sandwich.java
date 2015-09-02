@@ -1,0 +1,62 @@
+//: polymorphism/Sandwich.java
+// Order of constructor calls.
+package ex11;
+
+import static Utils.Print.print;
+
+class Meal {
+    Meal() {
+        print("Meal()");
+    }
+}
+
+class Bread {
+    Bread() {
+        print("Bread()");
+    }
+}
+
+class Cheese {
+    Cheese() {
+        print("Cheese()");
+    }
+}
+
+class Lettuce {
+    Lettuce() {
+        print("Lettuce()");
+    }
+}
+
+class Lunch extends Meal {
+    Lunch() {
+        print("Lunch()");
+    }
+}
+
+class PortableLunch extends Lunch {
+    PortableLunch() {
+        print("PortableLunch()");
+    }
+}
+
+class Pickle {
+    Pickle() {
+        print("Pickle()");
+    }
+}
+
+public class Sandwich extends PortableLunch {
+    private Bread b = new Bread();
+    private Cheese c = new Cheese();
+    private Lettuce l = new Lettuce();
+    private Pickle pickle = new Pickle();
+
+    public Sandwich() {
+        print("Sandwich()");
+    }
+
+    public static void main(String[] args) {
+        new Sandwich();
+    }
+}
