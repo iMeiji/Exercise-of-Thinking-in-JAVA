@@ -1,19 +1,20 @@
-package part13.ex17;
+package part13.ex19;
 
-import java.util.regex.*;
+import net.mindview.util.TextFile;
 
-import net.mindview.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import static Utils.Print.*;
+import static Utils.Print.print;
 
 public class JGrep {
 
-    static final String CMNT_EXT_REGEX =
-            "(?x)(?m)(?s) # Comments, Multiline & Dotall: ON\n" +
-                    "/\\* # Match START OF THE COMMENT\n" +
-                    "(.*?) # Match all chars\n" +
-                    "\\*/ # Match END OF THE COMMENT\n" +
-                    "| //(.*?)$ # OR Match C++ style comments\n";
+    static final String CLASS_NAME_REGEX = "[A-Za-z_][A-Za-z0-9_]*";
+
+    static final String CLASS_NAME_REGEX_WITH_BRACKET = "(" + CLASS_NAME_REGEX + ")";
+
+    static final String CLASS_REGEX = "class\\s+" + CLASS_NAME_REGEX_WITH_BRACKET + "|" + "extends\\s+"
+            + CLASS_NAME_REGEX_WITH_BRACKET + "|" + "new\\s+" + CLASS_NAME_REGEX_WITH_BRACKET + "\\(";
 
     //这里写死了文件路径
     private static final String FILE_PATH =
@@ -30,7 +31,7 @@ public class JGrep {
         String textString = TextFile.read(FILE_PATH);
 
         //匹配注释
-        Pattern p1 = Pattern.compile(CMNT_EXT_REGEX);
+        Pattern p1 = Pattern.compile(CLASS_REGEX);
         Matcher m1 = p1.matcher(textString);
         while(m1.find()) {
             print(m1.group());
