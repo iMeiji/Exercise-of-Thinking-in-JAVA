@@ -58,7 +58,7 @@
     <java
      classname="net.mindview.atunit.AtUnit"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/atunit/"
+     dir="/mindview/atunit/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -67,7 +67,7 @@
     <java
      classname="net.mindview.atunit.AtUnitRemover"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/atunit/"
+     dir="/mindview/atunit/"
      failonerror="true"
      fork="true">
       <arg line=".."/>
@@ -78,7 +78,7 @@
     <java
      classname="net.mindview.atunit.ClassNameFinder"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/atunit/"
+     dir="/mindview/atunit/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -87,7 +87,7 @@
     <java
      classname="net.mindview.util.ContainerMethodDifferences"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -96,7 +96,7 @@
     <java
      classname="net.mindview.util.CountingIntegerList"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -105,7 +105,7 @@
     <java
      classname="net.mindview.util.CountingMapData"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -114,7 +114,7 @@
     <java
      classname="net.mindview.util.Countries"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -123,7 +123,7 @@
     <java
      classname="net.mindview.util.Directory"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -132,7 +132,7 @@
     <java
      classname="net.mindview.util.Hex"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -141,7 +141,7 @@
     <java
      classname="net.mindview.util.New"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -150,7 +150,7 @@
     <java
      classname="net.mindview.util.ProcessFiles"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
@@ -159,7 +159,7 @@
     <java
      classname="net.mindview.util.TextFile"
      classpath="${java.class.path};${basedir};${basedir}/.."
-     dir="../net/mindview/util/"
+     dir="/mindview/util/"
      failonerror="true"
      fork="true"/>
   </target>
