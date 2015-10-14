@@ -1,6 +1,5 @@
 package javaExercise.part14.ex13;
 
-import javaExercise.part14.ex13.factory.Factory;
 import net.mindview.util.TypeCounter;
 
 import static net.mindview.util.Print.*;
