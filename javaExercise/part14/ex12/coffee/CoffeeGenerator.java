@@ -6,8 +6,7 @@ import java.util.*;
 
 import net.mindview.util.*;
 
-public class CoffeeGenerator
-        implements Generator<Coffee>, Iterable<Coffee> {
+public class CoffeeGenerator implements Generator<Coffee>, Iterable<Coffee> {
     private Class[] types = {Latte.class, Mocha.class,
             Cappuccino.class, Americano.class, Breve.class,};
     private static Random rand = new Random(47);
