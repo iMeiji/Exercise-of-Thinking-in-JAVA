@@ -1,24 +1,36 @@
-//: net/mindview/util/CountingGenerator.java
-// Simple generator implementations.
-package net.mindview.util;
+package javaExercise.part16.ex16;
 
-public class CountingGenerator {
-    public static class
-            Boolean implements Generator<java.lang.Boolean> {
-        private boolean value = false;
+import net.mindview.util.Generator;
+
+/**
+ * Created by yeming on 2015/10/22.
+ */
+public class SkipGenerator {
+    public static class Boolean implements Generator<java.lang.Boolean> {
+        private boolean value;
+        private boolean step;
+
+        public Boolean(boolean step) {
+            this.step = step;
+        }
 
         public java.lang.Boolean next() {
-            value = !value; // Just flips back and forth
+            value = step ? !value : value; // Just flips back and forth
             return value;
         }
     }
 
-    public static class
-            Byte implements Generator<java.lang.Byte> {
+    public static class Byte implements Generator<java.lang.Byte> {
         private byte value = 0;
+        private byte step;
+
+        public Byte(byte step) {
+            this.step = step;
+        }
 
         public java.lang.Byte next() {
-            return value++;
+            value += step;
+            return value;
         }
     }
 
@@ -35,8 +47,7 @@ public class CountingGenerator {
         }
     }
 
-    public static class
-            String implements Generator<java.lang.String> {
+    public static class String implements Generator<java.lang.String> {
         private int length = 7;
         Generator<java.lang.Character> cg = new Character();
 
@@ -103,4 +114,4 @@ public class CountingGenerator {
             return result;
         }
     }
-} ///:~
+}
