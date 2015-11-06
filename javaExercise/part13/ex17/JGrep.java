@@ -17,7 +17,7 @@ public class JGrep {
 
     //这里写死了文件路径
     private static final String FILE_PATH =
-            "C:\\Users\\yeming\\Documents\\GitHub\\Exercise-of-Thinking-in-JAVA\\javaExercise\\part13\\ex17\\Person.java";
+            "C:\\Users\\yeming\\Documents\\GitHub\\Exercise-of-Thinking-in-JAVA\\javaExercise\\part13\\part17\\Person.java";
 
 
     public static void main(String[] args) throws Exception {

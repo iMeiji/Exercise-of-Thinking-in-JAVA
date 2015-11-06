@@ -8,15 +8,15 @@ public class ForNameCreator extends PetCreator {
             new ArrayList<Class<? extends Pet>>();
     // Types that you want to be randomly created:
     private static String[] typeNames = {
-            "javaExercise.part14.ex11.pets.Mutt",
-            "javaExercise.part14.ex11.pets.Pug",
-            "javaExercise.part14.ex11.pets.EgyptianMau",
-            "javaExercise.part14.ex11.pets.Manx",
-            "javaExercise.part14.ex11.pets.Cymric",
-            "javaExercise.part14.ex11.pets.Rat",
-            "javaExercise.part14.ex11.pets.Mouse",
-            "javaExercise.part14.ex11.pets.Hamster",
-            "javaExercise.part14.ex11.pets.Gerbil"  //新增Gerbil类
+            "javaExercise.part14.ex1.pets.Mutt",
+            "javaExercise.part14.ex1.pets.Pug",
+            "javaExercise.part14.ex1.pets.EgyptianMau",
+            "javaExercise.part14.ex1.pets.Manx",
+            "javaExercise.part14.ex1.pets.Cymric",
+            "javaExercise.part14.ex1.pets.Rat",
+            "javaExercise.part14.ex1.pets.Mouse",
+            "javaExercise.part14.ex1.pets.Hamster",
+            "javaExercise.part14.ex1.pets.Gerbil"  //新增Gerbil类
     };
 
     @SuppressWarnings("unchecked")
