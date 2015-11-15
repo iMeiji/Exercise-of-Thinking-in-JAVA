@@ -67,16 +67,16 @@ public class TextFile extends ArrayList<String> {
   }
   // Simple test:
   public static void main(String[] args) {
-    String file = read("TextFile.java");
+    String file = read("NewTextFile.java");
     write("test.txt", file);
     TextFile text = new TextFile("test.txt");
     text.write("test2.txt");
     // Break into unique sorted list of words:
     TreeSet<String> words = new TreeSet<String>(
-      new TextFile("TextFile.java", "\\W+"));
+      new TextFile("NewTextFile.java", "\\W+"));
     // Display the capitalized words:
     System.out.println(words.headSet("a"));
   }
 } /* Output:
-[0, ArrayList, Arrays, Break, BufferedReader, BufferedWriter, Clean, Display, File, FileReader, FileWriter, IOException, Normally, Output, PrintWriter, Read, Regular, RuntimeException, Simple, Static, String, StringBuilder, System, TextFile, Tools, TreeSet, W, Write]
+[0, ArrayList, Arrays, Break, BufferedReader, BufferedWriter, Clean, Display, File, FileReader, FileWriter, IOException, Normally, Output, PrintWriter, Read, Regular, RuntimeException, Simple, Static, String, StringBuilder, System, NewTextFile, Tools, TreeSet, W, Write]
 *///:~
